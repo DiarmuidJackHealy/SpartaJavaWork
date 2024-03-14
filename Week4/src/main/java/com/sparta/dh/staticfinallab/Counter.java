@@ -17,7 +17,9 @@ public class Counter
     //constructor
     public Counter(String name)
     {
-
+        this.name = name;
+        globalCount = 0;
+        count = 0;
     }
 
     //getters
@@ -46,5 +48,11 @@ public class Counter
             count ++;
             globalCount ++;
         }
+    }
+
+    public void decrement()
+    {
+        count --;
+        globalCount --;
     }
 }
