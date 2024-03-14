@@ -15,11 +15,10 @@ public class Counter
     }
 
     //constructor
-    public Counter(String name)
+    public Counter(String name, int count)
     {
         this.name = name;
-        globalCount = 0;
-        count = 0;
+        this.count = count;
     }
 
     //getters

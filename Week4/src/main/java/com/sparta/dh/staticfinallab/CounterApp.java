@@ -6,10 +6,10 @@ public class CounterApp {
     public static void main(String[] args) {
         // create the counters
         Counter[] theCounters = {
-                new Counter("James"),
-                new Counter("Avril"),
-                new Counter("Rishi"),
-                new Counter("Mo")
+                new Counter("James", 0),
+                new Counter("Avril", 0),
+                new Counter("Rishi", 0),
+                new Counter("Mo", 0)
         };
 
         // run the simulation
