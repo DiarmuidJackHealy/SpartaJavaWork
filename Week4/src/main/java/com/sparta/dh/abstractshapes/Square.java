@@ -1,6 +1,6 @@
 package com.sparta.dh.abstractshapes;
 
-public class Square extends Shape {
+public class Square extends Shape implements Printable {
     private double side;
 
     @Override
@@ -10,5 +10,9 @@ public class Square extends Shape {
 
     public Square(double side){
         this.side = side;
+    }
+
+    public void print() {
+        System.out.println("Square: " + calculateArea());
     }
 }

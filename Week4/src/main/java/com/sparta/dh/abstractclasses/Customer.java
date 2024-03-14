@@ -1,6 +1,6 @@
 package com.sparta.dh.abstractclasses;
 
-public class Customer extends Person{
+public class Customer extends Person implements Printable{
     public Customer(String firstName, String lastName) {
         super(firstName, lastName);
     }
@@ -8,5 +8,10 @@ public class Customer extends Person{
     @Override
     public void delete() {
         System.out.println("Customer has been deleted");
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Customer: " + super.getFirstName());
     }
 }

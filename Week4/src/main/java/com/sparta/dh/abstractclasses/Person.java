@@ -1,6 +1,6 @@
 package com.sparta.dh.abstractclasses;
 
-public abstract class Person {
+public abstract class Person implements Printable {
     private String firstName;
     private String lastName;
 

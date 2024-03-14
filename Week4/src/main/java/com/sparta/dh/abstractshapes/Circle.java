@@ -1,6 +1,6 @@
 package com.sparta.dh.abstractshapes;
 
-public class Circle extends Shape{
+public class Circle extends Shape implements Printable{
 
     private double radius;
     @Override
@@ -12,4 +12,8 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
+    @Override
+    public void print() {
+        System.out.println("Circle: " + calculateArea());
+    }
 }
