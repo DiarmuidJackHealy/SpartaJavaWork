@@ -1,6 +1,6 @@
 package com.sparta.dh.abstractclasses;
 
-public class Customer extends Person implements Printable{
+public class Customer extends Person implements Printable {
     public Customer(String firstName, String lastName) {
         super(firstName, lastName);
     }
@@ -13,5 +13,14 @@ public class Customer extends Person implements Printable{
     @Override
     public void print() {
         System.out.println("Customer: " + super.getFirstName());
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+
+        return (obj instanceof Customer anotherCustomer)
+                && getFirstName().equals(anotherCustomer.getFirstName())
+                && getLastName().equals(anotherCustomer.getLastName());
     }
 }
