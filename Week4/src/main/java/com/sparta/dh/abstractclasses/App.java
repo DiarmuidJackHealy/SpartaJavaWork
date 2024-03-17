@@ -1,7 +1,7 @@
 package com.sparta.dh.abstractclasses;
 
 import com.sparta.dh.abstractshapes.Circle;
-import com.sparta.dh.abstractshapes.Square; 
+import com.sparta.dh.abstractshapes.Square;
 
 import java.util.ArrayList;
 
@@ -21,5 +21,7 @@ public class App {
         Customer c1 = new Customer("DJ", "Healy");
         Customer c2 = new Customer("DJ", "Healy");
         System.out.println(c1.equals(c2));
+        System.out.println(c1.hashCode());
+        System.out.println(c2.hashCode());
     }
 }

@@ -1,5 +1,7 @@
 package com.sparta.dh.abstractclasses;
 
+import java.util.Objects;
+
 public class Customer extends Person implements Printable {
     public Customer(String firstName, String lastName) {
         super(firstName, lastName);
@@ -22,5 +24,10 @@ public class Customer extends Person implements Printable {
         return (obj instanceof Customer anotherCustomer)
                 && getFirstName().equals(anotherCustomer.getFirstName())
                 && getLastName().equals(anotherCustomer.getLastName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFirstName(), getLastName());
     }
 }
